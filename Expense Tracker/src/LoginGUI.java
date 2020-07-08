@@ -37,7 +37,7 @@ public class LoginGUI {
 	
 	private void layoutManager() {
 
-		frame = new JFrame("Bank Application");
+		frame = new JFrame("Expense Tracker");
 		frame.setSize(300, 175);
 		frame.setResizable(false);
 		frame.getContentPane().setBackground(Color.white);
