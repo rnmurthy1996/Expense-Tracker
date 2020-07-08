@@ -28,13 +28,14 @@ Once you have succesfully logged in, you wil be directed to the home page GUI wh
 ![](Expense%20Tracker/Images/ET4.PNG)
 
 To add an expense, click the "Add Expense" button. The add expense GUI will open in which the user will enter the date and description of their expense, its spend category, and the cost. Once this information is entered and the "Add Expense" button is clicked, the expense is added to your account and the list on the home screen is updated.  
-![](Expense%20Tracker/Images/ET5.PNG)
+![](Expense%20Tracker/Images/ET5.PNG) ![](Expense%20Tracker/Images/ET6.PNG)
 
 To remove an expense, click the "Remove Expense" button. The remove expense GUI will open in which the user will choose the expense they want to remove from their account. Once this choice is made and the "Remove Expense" button is clicked, the expense is deleted from your account and the list on the home screen is updated.  
-![](Expense%20Tracker/Images/ET6.PNG)
+![](Expense%20Tracker/Images/ET7.PNG)
 
 To view spending statistics for your account, click the "View Statistics" button. The view statistics GUI will open in which the user will choose a date range that want the statics to show for.
-![](Expense%20Tracker/Images/ET7.PNG)
+
+![](Expense%20Tracker/Images/ET8.PNG)
 
 ## Built With
 * Eclipse - Java IDE used for development
