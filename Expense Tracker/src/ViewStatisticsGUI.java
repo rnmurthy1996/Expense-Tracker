@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 
+/**
+ * ViewStatisticsGUI.java is used to handle the GUI for viewing spending statistics for a given date range.
+ * user a is able to view metrics such as total spending, number of expenses, and spending by category.
+ */
+
+
 public class ViewStatisticsGUI {
 
 	private JFrame frame;
@@ -42,10 +48,7 @@ public class ViewStatisticsGUI {
 		a = acc;
 	}
 
-	/**
-	 * The layoutManager method initializes all of the panels used by
-	 * DepositGui.java.
-	 */
+
 	private void layoutManager() {
 
 		frame = new JFrame("Expense Tracker");
@@ -75,10 +78,7 @@ public class ViewStatisticsGUI {
 		frame.add(statistics);
 	}
 
-	/**
-	 * The createGui method is used to initialize the GUI which contains the
-	 * required panels, labels, buttons, etc.
-	 */
+	
 	public void createGui() {
 
 		layoutManager();
@@ -136,12 +136,7 @@ public class ViewStatisticsGUI {
 		exit.addActionListener(new Exit());
 	}
 
-	/**
-	 * The private class DepositMoney is called when the depositButton Jbutton is
-	 * clicked and deposits the user determined amount into the account. The deposit
-	 * amount is checked in this class to ensure that it is a valid amount (no
-	 * spaces, letters, negative values, etc.).
-	 */
+	
 	private class RunAnalysis implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			
@@ -364,11 +359,6 @@ public class ViewStatisticsGUI {
 		}
 	}
 
-	/**
-	 * The private class Exit is called when the exit Jbutton is clicked and closes
-	 * the deposit money GUI. This class also initializes a new home page GUI with
-	 * an updated account balance.
-	 */
 	private class Exit implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 
@@ -376,49 +366,4 @@ public class ViewStatisticsGUI {
 		}
 	}
 
-	/**
-	 * The userNameCheck method checks to see if the username entered by the user
-	 * contains any spaces.
-	 * 
-	 * @param s the username that is being checked for spaces.
-	 * @return true if the username does not contain any spaces and false otherwise.
-	 */
-	public boolean userNameCheck(String s) {
-		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == ' ') {
-				return false;
-			}
-		}
-		return true;
-	}
-
-	/**
-	 * The depositCheck method checks to see if the deposit entered by the user only
-	 * contains numbers.
-	 * 
-	 * @param s the deposit that is being checked for non-numerical values.
-	 * @return true if the deposit only contains numerical values and false
-	 *         otherwise.
-	 */
-	public boolean depositCheck(String s) {
-		for (int i = 0; i < s.length(); i++) {
-			if (Character.isDigit(s.charAt(i)) == false) {
-				return false;
-			}
-		}
-		return true;
-	}
-
-	/**
-	 * The depositPosCheck method checks to see if the deposit is positive.
-	 * 
-	 * @param s the deposit that is being checked to see if it is a positive value.
-	 * @return true if the deposit is positive and false otherwise.
-	 */
-	public boolean depositPosCheck(String s) {
-		if ((s.substring(0, 1)).equals("-")) {
-			return false;
-		}
-		return true;
-	}
 }

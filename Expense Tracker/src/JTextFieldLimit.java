@@ -8,9 +8,8 @@ import javax.swing.text.PlainDocument;
 
 /**
  * 
- * JTextFieldLimit.java is used to limit the number of characters in a
- * JTextField. This was primarily used to limit the number of characters in the
- * cents JTextField to two.
+ * JTextFieldLimit.java is used to limit the number of characters in a JTextField. 
+ * This was used to limit the number of characters in the cents JTextField to two on the AddExpense GUI.
  */
 
 class JTextFieldLimit extends PlainDocument {

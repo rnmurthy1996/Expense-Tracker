@@ -6,6 +6,13 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 
+/**
+ * LoginGUI.java is used to handle the GUI for the login screen.
+ * This GUI contains the options to either login or create a new account.
+ * It also authenticates the username and password fields before loggin in.
+ */
+
+
 public class LoginGUI {
 
 	private JFrame frame;
@@ -28,10 +35,6 @@ public class LoginGUI {
 
 	public static User workingAccount;
 	
-	/**
-	 * The layoutManager method initializes all of the panels used by
-	 * DepositGui.java.
-	 */
 	private void layoutManager() {
 
 		frame = new JFrame("Bank Application");
@@ -62,10 +65,6 @@ public class LoginGUI {
 		frame.add(incorrect);
 	}
 
-	/**
-	 * The createGui method is used to initialize the GUI which contains the
-	 * required panels, labels, buttons, etc.
-	 */
 	public void createGui() {
 
 		layoutManager();
@@ -101,13 +100,6 @@ public class LoginGUI {
 		exit.addActionListener(new Exit());
 	}
 
-	/**
-	 * The private class Login is called when the login Jbutton is clicked. This
-	 * class logs the user into their account and opens the home page GUI. The
-	 * values entered in the username and password fields are checked for
-	 * verification with the account database in this class to ensure proper
-	 * credentials.
-	 */
 	private class Login implements ActionListener {
 
 		public void actionPerformed(ActionEvent event) {
@@ -133,10 +125,7 @@ public class LoginGUI {
 		}
 	}
 
-	/**
-	 * The private class CreateAccount is called when the createAccount Jbutton is
-	 * clicked and opens the create account GUI.
-	 */
+	
 	private class CreateAccount implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 
@@ -145,10 +134,7 @@ public class LoginGUI {
 		}
 	}
 
-	/**
-	 * The private class Exit is called when the exit Jbutton is clicked and closes
-	 * the login GUI.
-	 */
+	
 	private class Exit implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 

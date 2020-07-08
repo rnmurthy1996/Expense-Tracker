@@ -1,3 +1,8 @@
+/**
+ * User.java is used to define a User and the variables required for a User.
+ */
+
+
 import java.util.ArrayList;
 
 public class User {

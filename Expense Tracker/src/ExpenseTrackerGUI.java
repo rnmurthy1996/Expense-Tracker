@@ -6,6 +6,12 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 
+/**
+ * ExpenseTrackerGUI.java is used to handle the GUI for the main screen.
+ * This GUI contains the buttons to access the AddExpense, RemoveExpense, and ViewStatistics GUIs.
+ * It also has the JTextArea with all expenses for User a.
+ */
+
 public class ExpenseTrackerGUI {
 
 	private JFrame frame;
@@ -33,10 +39,7 @@ public class ExpenseTrackerGUI {
 		a = acc;
 	}
 
-	/**
-	 * The layoutManager method initializes all of the panels used by
-	 * BankAppGui.java.
-	 */
+	
 	private void layoutManager() {
 
 		frame = new JFrame("Expense Tracker");
@@ -64,10 +67,7 @@ public class ExpenseTrackerGUI {
 		frame.add(area);
 	}
 
-	/**
-	 * The createGui method is used to initialize the GUI which contains the
-	 * required panels, labels, buttons, etc.
-	 */
+	
 	public void createGui() {
 
 		layoutManager();
@@ -111,10 +111,7 @@ public class ExpenseTrackerGUI {
 		exit.addActionListener(new Exit());
 	}
 
-	/**
-	 * The private class DepositMoney is called when the deposit Jbutton is clicked
-	 * and opens the deposit money GUI.
-	 */
+	
 	private class AddExpense implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 
@@ -122,10 +119,7 @@ public class ExpenseTrackerGUI {
 		}
 	}
 
-	/**
-	 * The private class WithdrawMoney is called when the withdraw Jbutton is
-	 * clicked and opens the withdraw money GUI.
-	 */
+	
 	private class RemoveExpense implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 
@@ -133,10 +127,7 @@ public class ExpenseTrackerGUI {
 		}
 	}
 
-	/**
-	 * The private class TransferMoney is called when the transfer Jbutton is
-	 * clicked and opens the transfer money GUI.
-	 */
+	
 	private class ViewStatistics implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 
@@ -144,10 +135,7 @@ public class ExpenseTrackerGUI {
 		}
 	}
 
-	/**
-	 * The private class Exit is called when the exit Jbutton is clicked and closes
-	 * all GUIs currently open that are associated with the application.
-	 */
+	
 	private class Exit implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 

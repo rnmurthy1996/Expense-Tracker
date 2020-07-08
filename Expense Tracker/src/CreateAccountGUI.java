@@ -7,6 +7,12 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 
+/**
+ * CreateAccountGUI.java is used handle the creation of new Users.
+ * It makes sure to check all the fields for this GUI are properly filled before adding the User.
+ */
+
+
 public class CreateAccountGUI {
 
 	private JFrame frame;
@@ -30,10 +36,7 @@ public class CreateAccountGUI {
 	private JLabel passwordErr;
 	private JLabel depositErr;
 
-	/**
-	 * The layoutManager method initializes all of the panels used by
-	 * CreateAccountGui.java.
-	 */
+	
 	private void layoutManager() {
 
 		frame = new JFrame("Bank Application");
@@ -64,10 +67,7 @@ public class CreateAccountGUI {
 		frame.add(incorrect);
 	}
 
-	/**
-	 * The createGui method is used to initialize the GUI which contains the
-	 * required panels, labels, buttons, etc.
-	 */
+	
 	public void createGui() {
 
 		layoutManager();
@@ -106,12 +106,7 @@ public class CreateAccountGUI {
 		exit.addActionListener(new Exit());
 	}
 
-	/**
-	 * The private class CreateAccount is called when the createAccount Jbutton is
-	 * clicked and creates a new account The required information entered by the
-	 * user is also checked for validity (username contains no spaces, initial
-	 * deposit is numerical, etc.).
-	 */
+	
 	private class CreateAccount implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 
@@ -160,25 +155,15 @@ public class CreateAccountGUI {
 		}
 	}
 
-	/**
-	 * The private class Exit is called when the exit Jbutton is clicked and closes
-	 * the create account GUI. This class also initializes a new login GUI.
-	 */
+	
 	private class Exit implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
-			// implement the Code to handle button click goes here
 			frame.dispose();
 			new LoginGUI().createGui();
 		}
 	}
 
-	/**
-	 * The userNameCheck method checks to see if the username entered by the user
-	 * contains any spaces.
-	 * 
-	 * @param s the username that is being checked for spaces.
-	 * @return true if the username does not contain any spaces and false otherwise.
-	 */
+	
 	public boolean userNameCheck(String s) {
 		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) == ' ') {

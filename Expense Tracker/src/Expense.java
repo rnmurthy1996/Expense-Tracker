@@ -1,3 +1,7 @@
+/**
+ * Expense.java is used to define an Expense and the variables required for an Expense.
+ */
+
 
 public class Expense {
 
