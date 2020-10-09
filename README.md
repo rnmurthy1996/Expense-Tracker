@@ -6,7 +6,7 @@ The project is coded in Java and utilizes the Swing API to deliver the applicati
 
 ## Prerequisites
 
-You will need a way to run the program which is written in Java. I recommend an IDE such as Eclipse for this purpose.
+You will need a way to run the program which is written in Java. I recommend an IDE such as IntelliJ IDEA for this purpose.
 
 ## Installation
 
@@ -38,7 +38,7 @@ To view spending statistics for your account, click the "View Statistics" button
 ![](Expense%20Tracker/Images/ET8.PNG)
 
 ## Built With
-* Eclipse - Java IDE used for development
+* IntelliJ IDEA - Java IDE used for development
 * Swing - Java graphics library used to build grapical user interface
 
 ## Authors
